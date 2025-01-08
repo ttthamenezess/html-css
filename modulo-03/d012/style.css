@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 
 :root{
     --fonte1: "Metamorphous", serif;
     --fonte2: "EB Garamond", serif;
     --fonte3: "Reenie Beanie", serif;
+    --fonte4: "Gloria Hallelujah", serif;
 }
   
 
@@ -32,7 +34,7 @@ header{
 
 header > h1 {
     font-family: var(--fonte1);
-    font-size: 10vw;
+    font-size: 7vw;
     font-weight: bolder;
     padding-top: 50px;
     font-variant: small-caps;
@@ -58,12 +60,16 @@ a:hover{
 }
 
 section{
-    font-family: var(--fonte3) ;
-    font-size: 5vw;
+    font-family: var(--fonte4) ;
+    font-size: 2.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -72,16 +78,32 @@ section.normal {
 }
 
 section.imagem{
-    background-color: rgb(82, 72, 72);
+    background-color: rgba(0, 0, 0, 0.281);
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.705);
+    background-attachment: fixed;
     
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: rgba(12, 12, 12, 0.459);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+
+}
+
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+
 }
 
 footer{
