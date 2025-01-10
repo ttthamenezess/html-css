@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        caption{
+            font-weight: bolder;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Desafio 3: Criando 2 tabelas</h1>
+    </header>
+
+    <table>
+        <caption>Tabela 1</caption>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">9</td>
+            <td>13</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">14</td>
+            <td colspan="2">15</td>
+            <td>17</td>
+        </tr>
+
+        <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>Tabela 2</caption>
+
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="3">E</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Q</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
