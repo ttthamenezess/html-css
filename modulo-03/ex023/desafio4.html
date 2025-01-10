@@ -14,27 +14,21 @@
             width: 300px;
         }
 
-        caption{
-            font-weight: bolder;
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
         }
 
         thead{
             font-weight: bolder;
         }
 
-        td {
+        td, th {
             border: 2px solid black;
             padding: 20px;
             text-align: center;
         } 
-
-        td#mulheres{
-            font-weight: bolder;
-        }
-
-        td#homens{
-            font-weight: bolder;
-        }
 
     </style>
 </head>
@@ -45,15 +39,18 @@
     </header>
 
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead>
-            <td>Grupo</td>
-            <td>Nomes</td>
-            <td colspan="3">Filmes</td>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td id="mulheres" rowspan="2">Mulheres</td>
+                <th rowspan="2" scope="rowgroup">Mulheres</th>
                 <td>Thais</td>
                 <td>Os Vingadores</td>
                 <td>Guerra Infinta</td>
@@ -68,7 +65,7 @@
             </tr>
 
             <tr>
-                <td id="homens" rowspan="2">Homens</td>
+                <th rowspan="2" scope="rowgroup">Homens</th>
                 <td>Diego</td>
                 <td>Clube da luta</td>
                 <td>Homem de ferro</td>
