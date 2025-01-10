@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td.letrab  {
+            background-color: #8080809c;
+        }
+
+    
+        td.letraf  {
+            background-color: #8080809c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Desafio 2: Rowspan</h1>
+    </header>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td class="letrab" colspan="2">B</td>
+            
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td  class="letraf" rowspan="3">F</td>
+        </tr>
+
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
