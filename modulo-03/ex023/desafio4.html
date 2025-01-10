@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        caption{
+            font-weight: bolder;
+        }
+
+        thead{
+            font-weight: bolder;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        } 
+
+        td#mulheres{
+            font-weight: bolder;
+        }
+
+        td#homens{
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Desafio 4: Criando uma tabela completa</h1>
+    </header>
+
+    <table>
+        <thead>
+            <td>Grupo</td>
+            <td>Nomes</td>
+            <td colspan="3">Filmes</td>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="mulheres" rowspan="2">Mulheres</td>
+                <td>Thais</td>
+                <td>Os Vingadores</td>
+                <td>Guerra Infinta</td>
+                <td>Star Wars</td>
+            </tr>
+
+            <tr>
+                <td>Lauane</td>
+                <td>Her</td>
+                <td>Black Swan</td>
+                <td>Amelie</td>
+            </tr>
+
+            <tr>
+                <td id="homens" rowspan="2">Homens</td>
+                <td>Diego</td>
+                <td>Clube da luta</td>
+                <td>Homem de ferro</td>
+                <td>Os Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Pedro</td>
+                <td>Creed</td>
+                <td>Jogos Mortais</td>
+                <td>Senhor dos Anéis</td>
+            </tr>
+
+            
+
+            
+        </tbody>
+
+
+    </table>
+    
+</body>
+</html>
