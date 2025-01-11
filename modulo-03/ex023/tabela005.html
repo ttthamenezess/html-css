@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabela 005
+    </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        thead{
+            font-weight: bolder;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 15x;
+            text-align: center;
+        } 
+
+        .cnome{
+            background-color: #808080b7;
+        }
+
+        .cgroup{
+            background-color: rgba(137, 43, 226, 0.589);
+        }
+
+        .cprof{
+            background-color: #808080b9;
+        }
+
+
+       
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Agrupando colunas em colgroup</h1>
+    </header>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="2">
+            <col class="cprof">
+        </colgroup>
+        
+      
+        <caption>Cadastro</caption> 
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col" >Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr> 
+
+        <tr>
+            <td>Thais</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Developer</td>
+        </tr>
+
+        <tr>
+            <td>Lauane</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Teacher</td>
+        </tr>
+
+        <tr>
+            <td>Cintia</td>
+            <td>F</td>
+            <td>37</td>
+            <td>Manager</td>
+        </tr>
+
+        <tr>
+            <td>Lucilene</td>
+            <td>F</td>
+            <td>60</td>
+            <td>Singer</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
