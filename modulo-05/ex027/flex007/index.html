@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 5- Anatomia dos itens</title>
+    <style>
+       div.conteiner{
+        background-color: dimgray;
+        display: flex;
+        flex-flow: row wrap;
+       } 
+
+       div.item{
+        background-color: #5ea3a3;
+        border: 1px solid black;
+        padding: 20px ;
+        text-align: center;
+    }
+
+        div#i1{
+            order: 3;
+
+    } 
+        div#i2{
+            order: -2;
+    }
+        div#i3{
+            order: 4;
+    }
+        div#i4{
+            order: 1;
+    }
+        div#i5{
+            order: 0;
+    }
+        div#i6{
+            order: 9;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!--ESSE É O PAI-->
+        <div class="item" id="i1">A</div> <!--FILHO-->
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+    </div>
+</body>
+</html>
